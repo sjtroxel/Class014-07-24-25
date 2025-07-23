@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BookService } from '../services/book';
-import { Book } from '../models/book';
+import { BookService } from '../../services/book';
+import { Book } from '../../models/book';
 
 @Component({
   selector: 'app-book-list',
