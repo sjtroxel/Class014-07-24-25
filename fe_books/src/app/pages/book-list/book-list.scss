@@ -1,5 +1,6 @@
 /* Container styling for the whole book list */
 :host {
+  text-align: center;
   display: block;
   max-width: 900px;
   margin: 3rem auto;
@@ -142,6 +143,7 @@ li button {
 
 /* Buttons (Add form) */
 button {
+  text-align: center;
   padding: 0.55rem 1.2rem;
   font-size: 1rem;
   font-weight: 700;

@@ -10,6 +10,18 @@ export const routes: Routes = [
     canActivate: [authGuard],
   },
   {
+    path: 'books/new',
+    loadComponent: () =>
+      import('./pages/book-new/book-new').then((c) => c.BookNewComponent),
+    canActivate: [authGuard],
+  },
+  {
+    path: 'books',
+    loadComponent: () =>
+      import('./pages/book-list/book-list').then((c) => c.BookListComponent),
+    canActivate: [authGuard],
+  },
+  {
     path: 'login',
     loadComponent: () =>
       import('./pages/login/login').then((c) => c.LoginComponent),

@@ -1,5 +1,6 @@
 <h2>Books</h2>
 
+
 @for (book of books; track book.id) {
   <li>
     <input type="text" [(ngModel)]="book.title" (blur)="updateBook(book)" placeholder="Title" />
@@ -17,9 +18,10 @@
 }
 <br>
 <hr />
+<button [routerLink]="['/books/new']">Create Book</button>
 <br>
 
-<h3>Add New Book</h3>
+<!-- <h3>Add New Book</h3>
 <form (ngSubmit)="addBook()">
   <input type="text" [(ngModel)]="newBook.title" name="title" placeholder="Title" required />
   <input type="text" [(ngModel)]="newBook.author" name="author" placeholder="Author" required />
@@ -28,4 +30,4 @@
     Read?
   </label>
   <button type="submit">Add</button>
-</form>
+</form> -->
